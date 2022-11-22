@@ -8,5 +8,5 @@ pub mod utils;
 fn main() {
     env::set_var("RUST_BACKTRACE", "1");
     check_for_file("1");
-    day_1();
+    day_1().unwrap()
 }
