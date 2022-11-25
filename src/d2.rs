@@ -8,7 +8,14 @@ struct PasswordPolicy {
 
 impl PasswordPolicy {
     fn is_valid(&self, password: &str) -> bool {
-        todo!()
+        self.range.contains(
+            &password
+                .as_bytes()
+                .iter()
+                .copied()
+                .filter(|&b| b == self.byte)
+                .count(),
+        )
     }
 }
 
