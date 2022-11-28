@@ -28,6 +28,7 @@ pub fn day_2() -> anyhow::Result<()> {
         .map(Result::unwrap)
         .filter(|(policy, password)| policy.is_valid(password))
         .count();
+    println!("count is {}", _input);
 
     Ok(())
 }

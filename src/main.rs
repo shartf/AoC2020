@@ -9,5 +9,5 @@ pub mod utils;
 fn main() {
     // env::set_var("RUST_BACKTRACE", "1");
     check_for_file("2");
-    // day_1().unwrap()
+    d2::day_2().unwrap()
 }
